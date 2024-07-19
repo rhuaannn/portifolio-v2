@@ -1,5 +1,10 @@
-
+import { Header} from "../../components/Header/index";
 
 export function Case() {
-  return <h1>Olá mundo</h1>;
+  return (
+    <>
+    <Header/>
+    <h1>Ola mundo</h1>
+  </>
+  )
 }

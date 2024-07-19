@@ -1,5 +1,14 @@
 import styled from "styled-components";
 
+import { Link } from 'react-router-dom';
+
+
+export const StyledLink = styled(Link)`
+  text-decoration: none;
+  color: inherit;
+`;
+
+
 export const Container = styled.header`
   display: flex;
   width: 100%;
@@ -40,6 +49,7 @@ export const LinksHeader = styled.ul`
     > li {
       flex-direction: column;
       margin-left: 48px;
+     
     }
   }
 `;

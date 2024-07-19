@@ -1,6 +1,5 @@
 import Typewriter from "typewriter-effect";
-import { Container, HeaderContainer, LinksHeader } from "./style";
-
+import { Container, HeaderContainer, LinksHeader, StyledLink } from "./style";
 
 export function Header() {
   return (
@@ -15,12 +14,12 @@ export function Header() {
             }}
           />
         </div>
-
         <LinksHeader>
           <ul>
-            <li>Quem sou </li>
-            <li>Cases</li>
-            <li>Contato</li>
+            <li>Quem sou</li>
+            <li>
+              <StyledLink to="/case">Cases</StyledLink>
+            </li>
           </ul>
         </LinksHeader>
       </HeaderContainer>
