@@ -2,10 +2,12 @@ import Typewriter from "typewriter-effect";
 import { Container, HeaderContainer, LinksHeader, StyledLink } from "./style";
 
 export function Header() {
+  
   return (
     <Container>
       <HeaderContainer>
         <div>
+        <StyledLink to="/">
           <Typewriter
             options={{
               strings: ["Rhuan Marques", "Desenvolvedor - FullStack"],
@@ -13,12 +15,14 @@ export function Header() {
               loop: true,
             }}
           />
+          </StyledLink>
         </div>
         <LinksHeader>
           <ul>
-            <li>Quem sou</li>
+            <li><StyledLink to="/profile">Quem sou</StyledLink></li>
+            <li><StyledLink to="/">Home</StyledLink></li>
             <li>
-              <StyledLink to="/case">Cases</StyledLink>
+              <StyledLink to="/case">Projetos</StyledLink>
             </li>
           </ul>
         </LinksHeader>
