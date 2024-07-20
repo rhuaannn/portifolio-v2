@@ -1,6 +1,6 @@
 import {  Routes, Route } from "react-router-dom";
 import { Home } from "../pages/Home";
-import { Case } from "../pages/Case";
+import { GitHubCard  } from "../pages/Case";
 import { MyProfile } from "../pages/MyProfile";
 
 export function AppRoutes() {
@@ -8,8 +8,9 @@ export function AppRoutes() {
  
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/case" element={<Case />} />
+        <Route path="/case" element={<GitHubCard />} />
         <Route path="/profile" element={<MyProfile />} />
+
       </Routes>
  
   );
